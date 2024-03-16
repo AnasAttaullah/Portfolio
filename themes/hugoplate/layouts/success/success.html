@@ -1,0 +1,47 @@
+{{ define "main" }}
+<section class="section-sm text-center">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="sm:col-10 md:col-8 lg:col-6">
+        <div
+          class="lottie-animation"
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -60px;
+          "
+        >
+          <script
+            src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"
+          ></script>
+          <dotlottie-player
+            src="https://lottie.host/6b835930-f13c-44de-b9ed-19e7b5668080/y50z3rTwf5.json"
+            background="transparent"
+            speed="0.7"
+            style="width: 350px; height: 350px"
+            direction="1"
+            playMode="normal"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+
+        <h1 class="h2 mb-4">Thanks for Reaching Out!</h1>
+        <div class="content">
+          <p>
+            Your message has been successfully submitted. I'll get back to you
+            as soon as possible. In the meantime, feel free to explore more
+            about my work or connect with me on social media. Looking forward to
+            connecting with you further!
+          </p>
+        </div>
+        <a href="{{ site.BaseURL | relLangURL }}" class="btn btn-primary mt-8">
+          Back to home
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
