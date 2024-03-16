@@ -20,7 +20,7 @@ theme_default = "system" # available options [light/dark/system]
 # Main Sections
 mainSections = ["blog"]
 # contact form action
-contact_form_action = "#" # contact form works with [https://airform.io/] or [https://formspree.io]
+contact_form_action = "/themes/hugoplate/layouts/contact/success.html" # contact form works with [https://airform.io/] or [https://formspree.io]
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
 google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
@@ -56,7 +56,7 @@ show_categories = true
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Anas Attaullah", "Portfolio","Web developer"]
+keywords = ["Anas Attaullah", "Portfolio", "Web developer"]
 description = "Anas Attaullah's Portfolio | Web developer and Tech enthusiast"
 author = "Anas Attaullah"
 image = "images/og-image.png"

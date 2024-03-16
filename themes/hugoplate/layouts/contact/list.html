@@ -7,9 +7,13 @@
         {{/* imbeded netlify inside form tag for form submission */}} {{/*
         action="{{ site.Params.contact_form_action }}" */}}
 
-        <form method="POST" action="./success.html" netlify>
+        <form method="POST" netlify>
           <div class="mb-6">
-            <label for="name" class="form-label">
+            <label
+              for="name"
+              action="{{ site.Params.contact_form_action }}"
+              class="form-label"
+            >
               Full Name <span class="text-red-500">*</span>
             </label>
             <input
