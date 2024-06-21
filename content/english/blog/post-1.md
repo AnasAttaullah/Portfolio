@@ -4,9 +4,9 @@ meta_title: "Turn old laptop into a minecraft server"
 description: "Learn how to turn your old laptop into a Minecraft server with this easy-to-follow guide. Perfect for web developers, programmers, and tech enthusiasts looking for a fun project."
 image: "/images/gallery/01.jpg"
 date: 2024-04-04
-categories: ["Network", "Data"]
+categories: ["Network", "Server"]
 author: "Anas Attaullah"
-tags: ["linux", "Linux"]
+tags: ["linux"]
 draft: false
 ---
 
@@ -153,7 +153,7 @@ After running this command you will get the ip address of your server.
 
 Before starting to configure your server its important that you make your self an OP. For this run command in the server console.
 
-```
+```cpp
 op your_minecraft_name
 ```
 
@@ -266,7 +266,7 @@ Download these pluggins and upload them into your pluggins folder present in the
 ##### Minimum player sleep 
 Another problem in minecraft server is sleep cycle . In order to skip the night all players should be sleeping simultaneouly. Fortunatly, the solution is quiet simple.
 
-```
+```cpp
 /gamerule playersSleepingPercentage <value>
 ```
 

@@ -94,7 +94,7 @@ maxAge = "720h"
 unsafe = true
 
 [markup.highlight]
-style = 'monokai' # see https://xyproto.github.io/splash/docs/all.html
+style = 'gruvbox' # see https://xyproto.github.io/splash/docs/all.html
 
 [markup.tableOfContents]
 startLevel = 2
