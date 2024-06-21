@@ -1,1 +1,15 @@
 // Add your own custom styles here
+:is(.dark .content) :is(:where(strong):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+    color: rgba(255, 255, 255, 0.866);
+  }
+  
+  :is(.dark .content) :is(:where(code):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+    color: rgba(255, 255, 255, 0.866);
+  }
+  
+  :is(.dark .content) :is(:where(a):not(:where([class~="not-prose"], [class~="not-prose"] *))) {
+    color: rgba(255, 255, 255, 0.787);
+  
+  }
+  
+  // .lottie-container --> class name for lottie player

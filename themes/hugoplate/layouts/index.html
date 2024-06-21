@@ -28,7 +28,9 @@
         </a>
         {{ end }} {{ end }}
       </div>
-      <div class="col-12 flex justify-center -mt-44 -mb-40 sm:-mt-28 sm:-mb-24">
+      <div
+        class="-z-10 col-12 flex justify-center -mt-44 -mb-40 sm:-mt-28 sm:-mb-24"
+      >
         {{/* For Image */}} {{/* {{ partial "image" (dict "Src" .image "Alt"
         "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]"
         "DisplayXL" "800x" ) }} */}} {{/* For lottie animation */}}
@@ -38,6 +40,7 @@
         ></script>
 
         <dotlottie-player
+          class="lottie-container"
           src="https://lottie.host/ebaf9ef5-d6e3-4b50-9537-372e8bf4eb79/42GNVs70GX.lottie"
           background="transparent"
           speed="1"
