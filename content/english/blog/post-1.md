@@ -2,7 +2,7 @@
 title: "How I turned an old Laptop into a Minecraft Server"
 meta_title: "Turn old laptop into a minecraft server"
 description: "Learn how to turn your old laptop into a Minecraft server with this easy-to-follow guide. Perfect for web developers, programmers, and tech enthusiasts looking for a fun project."
-image: "/images/gallery/01.jpg"
+image: "images/blog/post_1/Minecraft_Server_thumb.png"
 date: 2024-04-04
 categories: ["Network", "Server"]
 author: "Anas Attaullah"
