@@ -80,6 +80,16 @@
     document.head.appendChild(fallbackScript);
   };
 
+  // A second init pass on full page load helps when template/post-processing
+  // timing differs between local and hosted environments.
+  window.addEventListener(
+    "load",
+    () => {
+      initTestimonialSlider();
+    },
+    { once: true },
+  );
+
   if (!initTestimonialSlider()) {
     let attempts = 0;
     const maxAttempts = 15;
