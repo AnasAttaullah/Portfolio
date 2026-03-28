@@ -52,16 +52,16 @@ weight = 4
 
 # footer menu
 [[footer]]
-name = "About"
-url = "about/"
+name = "Home"
+url = "/"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "elements/"
+name = "Support"
+url = "support/"
 weight = 2
 
 [[footer]]
-name = "Privacy Policy"
-url = "privacy-policy/"
+name = "Contact"
+url = "contact/"
 weight = 3

@@ -1,55 +1,58 @@
 ---
 # Banner
 banner:
-  title: "I'm Anas Attaullah. Web Developer, programmer & tech enthusiast"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
+  title: "Hey 👋, I am Anas Attaullah,<br>Software Developer"
+  content: "Turning complex software challenges into intuitive desktop and web applications. I emphasize performance, thoughtful architecture, and polished UX to ensure every project feels responsive, reliable, and well-crafted"
   # image: "/images/banner.png"
   button:
     enable: true
     label: "Connect through LinkedIn"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "https://www.linkedin.com/in/anas-attaullah/"
+  github_button:
+    enable: true
+    label: "View GitHub"
+    link: "https://github.com/AnasAttaullah"
 
 # Features
 
 
-# features:
-#   - title: "What's Included in Hugoplate"
-#     image: "/images/service-1.png"
-#     content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
-#     bulletpoints:
-#       - "10+ Pre-build pages"
-#       - "95+ Google Pagespeed Score"
-#       - "Build with Hugo and TailwindCSS for easy and customizable styling"
-#       - "Fully responsive on all devices"
-#       - "SEO-optimized for better search engine rankings"
-#       - "**Open-source and free** for personal and commercial use"
-#     button:
-#       enable: false
-#       label: "Get Started Now"
-#       link: "#"
+features:
+  - title: "Desktop Development"
+    image: "/images/service-1.png"
+    content: "I build specialized Windows tools with .NET and WPF that stay fast under real-world workloads. The focus is practical UX, responsive interactions, and maintainable architecture from day one."
+    bulletpoints:
+      - "Performance-first architecture"
+      - "Responsive, user-focused UX"
+      - "Clean, maintainable code"
+      - "Reliable deployment-ready builds"
+    button:
+      enable: false
+      label: ""
+      link: ""
 
-#   - title: "Discover the Key Features Of Hugo"
-#     image: "/images/service-2.png"
-#     content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-#     bulletpoints:
-#       - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-#       - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-#       - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-#     button:
-#       enable: true
-#       label: "Get Started Now"
-#       link: "https://github.com/zeon-studio/hugoplate"
+  - title: "Wordpress Development"
+    image: "/images/service-2.png"
+    content: "I design and optimize websites that feel lightweight, load quickly, and scale with content growth. Every decision is guided by usability, conversion flow, and long-term maintainability."
+    bulletpoints:
+      - "WordPress optimization"
+      - "Core Web Vitals improvements"
+      - "Scalable site structure"
+      - "Clear, conversion-friendly UI"
+    button:
+      enable: false
+      label: ""
+      link: ""
 
-#   - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-#     image: "/images/service-3.png"
-#     content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-#     bulletpoints:
-#       - "Instantly load static sites for better user experience and SEO."
-#       - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-#       - "Use any front-end library or framework, or build custom components, for any project size."
-#       - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
-#     button:
-#       enable: false
-#       label: ""
-#       link: ""
+  - title: "Current Focus"
+    image: "/images/service-3.png"
+    content: "My current work bridges native application performance with modern web accessibility. I am actively strengthening full-stack patterns that connect desktop and web systems smoothly."
+    bulletpoints:
+      - "Asynchronous patterns in .NET"
+      - "ASP.NET Core integration"
+      - "Continuous architecture learning"
+      - "Desktop-to-web workflow design"
+    button:
+      enable: false
+      label: ""
+      link: ""
 ---

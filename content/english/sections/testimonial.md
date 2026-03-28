@@ -1,29 +1,29 @@
 ---
 enable: true
-title: "What Users Are Saying About Hugoplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "Trusted By Teams & Clients Alike"
+description: "Real feedback from clients and collaborators on delivery quality, performance, and communication."
 
 # Testimonials
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Farhan K."
+    designation: "Small Business Owner"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "Our website flow was rebuilt with performance in mind and the difference was immediate. Pages loaded faster, navigation felt cleaner, and inquiries increased within the first month."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Areeba S."
+    designation: "Project Coordinator"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "What stands out most is the balance between technical depth and usability. Communication stayed clear, planning stayed disciplined, and shipped features felt polished for real users."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Umair M."
+    designation: "Desktop App User"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "The desktop tool delivered was exactly what our workflow needed. It is stable, responsive, and thoughtfully designed, even for people who are not highly technical."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Hassan R."
+    designation: "Technical Collaborator"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    content: "A strong engineering mindset shows in clean code structure, forward-looking scalability decisions, and a consistent push for faster, smoother user experiences."
 
 # don't create a separate page
 _build:

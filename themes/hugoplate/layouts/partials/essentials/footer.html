@@ -14,13 +14,15 @@
           {{ range site.Menus.footer }}
             <li class="m-3 inline-block">
               <a
-                {{ if findRE `^http` .URL }}
+                {{ if or (findRE `^http` .URL) (findRE `^mailto:` .URL) }}
                   target="_blank" rel="noopener"
                 {{ end }}
                 href="{{ if findRE `^#` .URL }}
                   {{ if not $.IsHome }}
                     {{ site.Home.RelPermalink }}
                   {{ end }}{{ .URL }}
+                {{ else if or (findRE `^http` .URL) (findRE `^mailto:` .URL) }}
+                  {{ .URL | safeURL }}
                 {{ else }}
                   {{ .URL | relLangURL }}
                 {{ end }}"

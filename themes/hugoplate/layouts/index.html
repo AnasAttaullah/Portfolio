@@ -1,32 +1,54 @@
 {{ define "main" }}
 <!-- Banner -->
 {{ with .Params.banner }}
-<section class="section pt-14">
+<section class="section pt-20 pb-10 lg:pt-24 lg:pb-14">
   <div class="container">
-    <div class="row justify-center">
-      <div class="lg:col-7 md:col-9 mb-8 text-center">
+    <div class="row items-center justify-center">
+      <div class="lg:col-8 md:col-10 mb-10 text-center">
         <h1 class="mb-4 text-h3 lg:text-h1">{{ .title | markdownify }}</h1>
-        <p class="mb-8">{{ .content | markdownify }}</p>
-        {{ with .button }} {{ if .enable }}
-        <a
-          class="btn btn-primary"
-          href="{{ .link | absURL }}"
-          {{
-          if
-          strings.HasPrefix
-          .link
-          `http`
-          }}
-          target="_blank"
-          rel="noopener"
-          {{
-          end
-          }}
-        >
-          {{ .label }}
-          <i class="fa fa-arrow-right pl-2"></i>
-        </a>
-        {{ end }} {{ end }}
+        <p class="mx-auto mb-8 max-w-3xl text-lg">{{ .content | markdownify }}</p>
+        <div class="mb-8 flex flex-wrap items-center justify-center gap-4">
+          {{ with .button }} {{ if .enable }}
+          <a
+            class="btn btn-primary inline-flex items-center"
+            href="{{ .link | absURL }}"
+            {{
+            if
+            strings.HasPrefix
+            .link
+            `http`
+            }}
+            target="_blank"
+            rel="noopener"
+            {{
+            end
+            }}
+          >
+            <i class="fa-brands fa-linkedin pr-2 text-xl leading-none"></i>
+            {{ .label }}
+            <i class="fa fa-arrow-right pl-2 leading-none"></i>
+          </a>
+          {{ end }} {{ end }} {{ with .github_button }} {{ if .enable }}
+          <a
+            class="btn btn-outline-primary inline-flex items-center"
+            href="{{ .link | absURL }}"
+            {{
+            if
+            strings.HasPrefix
+            .link
+            `http`
+            }}
+            target="_blank"
+            rel="noopener"
+            {{
+            end
+            }}
+          >
+            <i class="fa-brands fa-github pr-2 text-xl leading-none"></i>
+            {{ .label }}
+          </a>
+          {{ end }} {{ end }}
+        </div>
       </div>
       <div
         class="-z-10 col-12 flex justify-center -mt-44 -mb-40 sm:-mt-28 sm:-mb-24"
@@ -63,15 +85,15 @@
       <div
         class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-2
-            {{ end }} md:col-5 mb-6"
+            {{ end }} md:col-4 mb-6"
       >
         {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL"
-        "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+        "380x" "DisplayLG" "320x" "DisplayMD" "280x") }}
       </div>
       <div
         class="{{ if not (modBool $i 2) }}
               md:order-1
-            {{ end }} md:col-7 lg:col-6"
+            {{ end }} md:col-8 lg:col-7"
       >
         <h2 class="mb-4">{{ .title | markdownify }}</h2>
         <p class="mb-8 text-lg">{{ .content | markdownify }}</p>
