@@ -1,0 +1,45 @@
+{{ $title := site.Title }}
+{{ if .Title }}
+  {{ $title = printf "%s | %s" .Title site.Title }}
+{{ end }}
+
+{{ $description := site.Title }}
+{{ with site.Params.metadata.description }}
+  {{ $description = . }}
+{{ end }}
+{{ with .Description }}
+  {{ $description = . }}
+{{ end }}
+{{ with .Params.description }}
+  {{ $description = . }}
+{{ end }}
+
+{{ $image := "" }}
+{{ with site.Params.metadata.image }}
+  {{ $image = . }}
+{{ end }}
+{{ with .Params.image }}
+  {{ $image = . }}
+{{ end }}
+
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}" />
+
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+{{ if $image }}
+  {{ $resolvedImage := cond (hasPrefix $image "http") $image (absURL $image) }}
+  <meta property="og:image" content="{{ $resolvedImage }}" />
+  <meta name="twitter:image" content="{{ $resolvedImage }}" />
+{{ end }}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+
+{{ with site.Params.social.twitter }}
+  <meta name="twitter:site" content="@{{ . }}" />
+{{ end }}

@@ -4,3 +4,6 @@ languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
+
+[en.social]
+twitter = ""
