@@ -23,7 +23,8 @@
 
 {{ $scriptsLazy = $scriptsLazy | resources.Concat "js/script-lazy.js" }}
 
-{{ if hugo.IsProduction }}
+{{ $isProd := or hugo.IsProduction (eq (getenv "HUGO_ENVIRONMENT") "production") }}
+{{ if $isProd }}
   {{ $scripts = $scripts | minify | fingerprint }}
   {{ $scriptsLazy = $scriptsLazy | minify | fingerprint }}
 {{ end }}

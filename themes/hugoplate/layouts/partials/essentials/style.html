@@ -57,7 +57,8 @@
 {{ $stylesLazy = $stylesLazy | resources.Concat "css/style-lazy.css" }}
 {{ $stylesLazy = $stylesLazy | css.PostCSS }}
 
-{{ if hugo.IsProduction }}
+{{ $isProd := or hugo.IsProduction (eq (getenv "HUGO_ENVIRONMENT") "production") }}
+{{ if $isProd }}
   {{ $styles = $styles | resources.ExecuteAsTemplate "css/style.css" . | minify | fingerprint | resources.PostProcess }}
   {{ $stylesLazy = $stylesLazy | resources.ExecuteAsTemplate "css/style-lazy.css" . | minify | fingerprint | resources.PostProcess }}
 {{ else }}
