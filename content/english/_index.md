@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Hey 👋, I am Anas Attaullah,<br>Software Developer"
-  content: "Turning complex software challenges into intuitive desktop and web applications. I emphasize performance, thoughtful architecture, and polished UX to ensure every project feels responsive, reliable, and well-crafted"
+  content: "Turning complex software challenges into intuitive desktop and web applications. I emphasize performance, thoughtful architecture, and polished UX"
   # image: "/images/banner.png"
   button:
     enable: true
