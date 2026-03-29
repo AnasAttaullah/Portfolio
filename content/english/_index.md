@@ -14,8 +14,6 @@ banner:
     link: "https://github.com/AnasAttaullah"
 
 # Features
-
-
 features:
   - title: "Desktop Development"
     image: "/images/service-1.png"
