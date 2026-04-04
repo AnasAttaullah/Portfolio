@@ -13,13 +13,13 @@ I've built desktop applications and web projects that focus on performance, clea
 
 ---
 
-### 🎵 Purchase Quick Media Control
+### 🎵 Purchase Quick Media Controls
 
-**Quick Media Control** is a lightweight Windows application designed to give you instant control over your media playback. It features a clean interface, minimal resource usage, and seamless integration with Windows.
+**Quick Media Controls** is a lightweight Windows application designed to give you instant control over your media playback. It features a clean interface, minimal resource usage, and seamless integration with Windows.
 
 The app is available on the Microsoft Store, and every purchase directly supports my development work.
 
-{{< button label="Buy on Microsoft Store" link="https://apps.microsoft.com/store/detail/your-app-id" style="solid" >}}
+{{< button label="Buy on Microsoft Store" link="https://apps.microsoft.com/detail/9msq5ct443tv" style="solid" >}}
 
 **Features:**
 - Fast, responsive media controls
