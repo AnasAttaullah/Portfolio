@@ -91,6 +91,14 @@ dir = ":resourceDir/_gen"
 maxAge = "720h"
 
 
+############################ Minify ##############################
+[minify]
+[minify.tdewolff]
+[minify.tdewolff.js]
+keepVarNames = true
+precision = 0
+version = 2022
+
 ############################ Markup ##############################
 [markup]
 [markup.goldmark.renderer]
