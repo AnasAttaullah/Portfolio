@@ -136,7 +136,7 @@ notAlternative = true
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/swiper/swiper-bundle.css"
+link = "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 lazy = false
 [[params.plugins.css]]
 link = "plugins/glightbox/glightbox.css"
@@ -156,7 +156,7 @@ lazy = true
 link = "js/search.js"
 lazy = false
 [[params.plugins.js]]
-link = "plugins/swiper/swiper-bundle.js"
+link = "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
 lazy = false
 [[params.plugins.js]]
 link = "plugins/cookie.js"
